@@ -5,7 +5,9 @@ var css2json = require("css-to-json");
 
 module.exports = function() {
 	return es.map(function(file, cb) {
-		file.contents = new Buffer(css2json.fromString(file.contents.toString()));
+		file.contents = new Buffer(
+			css2json.fromString(JSON.stringify(file.contents))
+		);
 		file.path = gutil.replaceExtension(file.path, ".json");
 		cb(null, file);
 	});
