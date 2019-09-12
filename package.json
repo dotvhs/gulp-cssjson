@@ -1,12 +1,12 @@
 {
   "name": "gulp-cssjson",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "gulp plugin to convert css to json",
   "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/dotvhs/gulp-cssjson.git"
+    "url": "git+https://github.com/dotvhs/gulp-cssjson.git"
   },
   "keywords": [
     "css",
@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/dotvhs/gulp-cssjson",
   "dependencies": {
-    "gulp-util": "*",
+    "css-to-json": "github:dotvhs/CSSJSON",
     "event-stream": "3.3.4",
-    "cssjson": "dotvhs/CSSJSON"
+    "gulp-util": "*"
   }
 }
